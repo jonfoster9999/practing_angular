@@ -7,4 +7,12 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'app';
+
+  pickUp(data) {
+  	console.log(data.name, " from other componenet");
+  }
+
+  giveRice() {
+  	return "rice and beans"
+  }
 }
