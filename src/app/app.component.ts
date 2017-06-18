@@ -7,6 +7,7 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'app';
+  selection: string = "recipes"
 
   pickUp(data) {
   	console.log(data.name, " from other componenet");
@@ -14,5 +15,9 @@ export class AppComponent {
 
   giveRice() {
   	return "rice and beans"
+  }
+
+  handleSelect(selection) {
+    this.selection = selection;
   }
 }

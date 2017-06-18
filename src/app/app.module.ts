@@ -10,9 +10,13 @@ import { ShoppingListComponent } from './shopping-list/shopping-list.component';
 import { HeaderComponent } from './header/header.component';
 import { RecipesComponent } from './recipes/recipes.component';
 import { ShoppingEditComponent } from './shopping-list/shopping-edit/shopping-edit.component';
+import { BasicDirective } from './directives/basic.directive';
+import { BetterHighlightDirective } from './better-highlight.directive';
+import { DropdownDirective } from './shared/dropdown.directive'
 
 @NgModule({
   declarations: [
+    BasicDirective,
     AppComponent,
     RecipeListComponent,
     RecipeItemComponent,
@@ -20,7 +24,9 @@ import { ShoppingEditComponent } from './shopping-list/shopping-edit/shopping-ed
     ShoppingListComponent,
     HeaderComponent,
     RecipesComponent,
-    ShoppingEditComponent
+    ShoppingEditComponent,
+    BetterHighlightDirective,
+    DropdownDirective
   ],
   imports: [
     BrowserModule,
